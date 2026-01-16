@@ -1,56 +1,60 @@
-<h1 align="center">Perpustakaan</h1>
+<h1 align="center">SIM STOK</h1>
 
-## Tech Stack
+<p align="center">
+Sistem Informasi Manajemen Stok berbasis web untuk pencatatan, monitoring, dan pelaporan persediaan barang.
+</p>
 
-- **[Laravel 11](https://laravel.com/)**
-- **[Bootstrap 5.3](https://getbootstrap.com)**
+---
 
-## Prerequisites
+## 📌 Deskripsi Singkat
+
+**SIM STOK** adalah aplikasi manajemen stok berbasis **Laravel 11** yang dirancang untuk membantu pencatatan barang masuk dan keluar, pemantauan stok minimum, serta penyusunan laporan inventori secara terstruktur.
+
+Project ini dikembangkan sebagai **project implementatif Laravel**, dengan fokus pada:
+- Struktur MVC yang rapi
+- Relasi database yang jelas
+- Role-based access (Admin & Owner)
+- Fitur yang mendekati kebutuhan dunia nyata
+
+---
+
+## ✨ Fitur Utama
+
+- 🔐 Autentikasi pengguna
+- 👥 Manajemen role (Admin & Owner)
+- 📦 Manajemen produk & kategori
+- 🏭 Manajemen supplier
+- 🔄 Transaksi stok masuk & keluar
+- ⚠️ Monitoring stok menipis & habis
+- 📊 Laporan stok & ringkasan bulanan
+- 🧾 Export laporan (PDF)
+- 🔔 Notifikasi stok
+
+---
+
+## 🛠️ Tech Stack
+
+- **Backend**: [Laravel 11](https://laravel.com/)
+- **Frontend**: Blade Template
+- **UI**: Bootstrap 5.3
+- **Database**: MySQL
+- **Build Tool**: Vite
+
+---
+
+## 📋 Prerequisites
+
+Pastikan environment kamu sudah memiliki:
 - PHP ^8.2
-- Composer ^2.2.0
-- NPM
+- Composer ^2.2
+- Node.js & NPM
+- MySQL
 
-## Setup Guide
+---
 
-- Clone project.
-```bash
-git clone https://github.com/aydinpramasta/perpustakaan-sekolah.git
-```
-- Setup database pada komputer anda, lalu masukkan kredensial-kredensialnya ke file `.env`.
-```
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=perpustakaan_sekolah
-DB_USERNAME=root
-DB_PASSWORD=
-```
-- Install dependency.
-```bash
-composer install
-npm install
-```
-- Generate app key.
-```bash
-php artisan key:generate
-```
-- Link storage untuk file upload.
-```bash
-php artisan storage:link
-```
-- Migrate database.
-```bash
-# Tanpa seeder
-php artisan migrate
+## ⚙️ Installation & Setup
 
-# Dengan seeder (data dummy)
-php artisan migrate --seed
-```
-- Jalankan aplikasi.
+### 1. Clone Repository
 ```bash
-php artisan serve
-```
-> Buka terminal baru, lalu jalankan.
-```bash
-npm run dev
-```
+git clone https://github.com/rivaelsaputra107387/sim-stok-laravel.git
+cd sim-stok-laravel
