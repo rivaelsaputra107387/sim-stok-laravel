@@ -58,3 +58,61 @@ Pastikan environment kamu sudah memiliki:
 ```bash
 git clone https://github.com/rivaelsaputra107387/sim-stok-laravel.git
 cd sim-stok-laravel
+
+2. Install Dependency
+composer install
+npm install
+
+3. Konfigurasi Environment
+
+Salin file .env.example menjadi .env, lalu sesuaikan database:
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=sim-stok
+DB_USERNAME=root
+DB_PASSWORD=
+
+
+4. Generate App Key
+php artisan key:generate
+
+
+5. Jalankan Migrasi
+# Tanpa seeder
+php artisan migrate
+
+# Dengan seeder (data dummy)
+php artisan migrate --seed
+
+6. Storage Link
+php artisan storage:link
+
+7. Jalankan Aplikasi
+php artisan serve
+
+Buka terminal baru untuk asset frontend:
+
+npm run dev
+
+
+📷 Screenshot
+
+(Coming Soon)
+
+🚧 Status Project
+
+Project ini masih dapat dikembangkan lebih lanjut, terutama pada:
+
+API integration
+
+Automated testing
+
+UI/UX improvement
+
+👤 Author
+
+Rivael Saputra
+Mahasiswa Teknik Informatika & Web Developer
+GitHub: @rivaelsaputra107387
