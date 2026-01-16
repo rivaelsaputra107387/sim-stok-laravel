@@ -1,0 +1,292 @@
+/* CSS Gradient Dashboard - Versi Ringan untuk SB Admin 2 */
+
+/* Background utama dengan gradient statis */
+:root {
+    --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --card-border: rgba(255, 255, 255, 0.2);
+    --text-color: #333;
+    --header-gradient: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Background body dengan gradient fixed */
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%) !important;
+    background-attachment: fixed !important;
+    min-height: 100vh;
+}
+
+/* Wrapper tanpa blur effect */
+#wrapper {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-radius: 10px !important;
+    margin: 10px !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Sidebar dengan gradient solid */
+.sidebar {
+    background: linear-gradient(180deg, #667eea 0%, #764ba2 100%) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.sidebar .nav-item .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    transition: background-color 0.2s ease !important;
+}
+
+.sidebar .nav-item .nav-link:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+}
+
+.sidebar .nav-item .nav-link.active {
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+}
+
+/* Topbar dengan background solid */
+.topbar {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Content area */
+#content {
+    background: transparent !important;
+}
+
+/* Card dengan background solid - NO BLUR */
+.card {
+    background: var(--card-bg) !important;
+    border: 1px solid var(--card-border) !important;
+    border-radius: 10px !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+    color: var(--text-color) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Card header dengan gradient */
+.card-header {
+    background: var(--header-gradient) !important;
+    color: white !important;
+    border-bottom: none !important;
+    border-radius: 10px 10px 0 0 !important;
+    font-weight: 600 !important;
+}
+
+/* Small info cards dengan warna solid */
+.card-primary {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%) !important;
+    border-left: 4px solid #667eea !important;
+    border: 1px solid rgba(102, 126, 234, 0.2) !important;
+}
+
+.card-success {
+    background: linear-gradient(135deg, rgba(40, 167, 69, 0.1) 0%, rgba(25, 135, 84, 0.1) 100%) !important;
+    border-left: 4px solid #28a745 !important;
+    border: 1px solid rgba(40, 167, 69, 0.2) !important;
+}
+
+.card-info {
+    background: linear-gradient(135deg, rgba(23, 162, 184, 0.1) 0%, rgba(13, 110, 253, 0.1) 100%) !important;
+    border-left: 4px solid #00ddff !important;
+    border: 1px solid rgba(23, 162, 184, 0.2) !important;
+}
+
+.card-warning {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.1) 0%, rgba(255, 143, 0, 0.1) 100%) !important;
+    border-left: 4px solid #ffc107 !important;
+    border: 1px solid rgba(255, 193, 7, 0.2) !important;
+}
+
+.card-danger {
+    background: linear-gradient(135deg, rgba(220, 53, 69, 0.1) 0%, rgba(255, 0, 0, 0.1) 100%) !important;
+    border-left: 4px solid #dc3545 !important;
+    border: 1px solid rgba(220, 53, 69, 0.2) !important;
+}
+
+/* Button dengan gradient - animasi ringan */
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    border: none !important;
+    transition: transform 0.2s ease !important;
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3) !important;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%) !important;
+    border: none !important;
+    transition: transform 0.2s ease !important;
+}
+
+.btn-success:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3) !important;
+}
+
+/* Table dengan styling ringan */
+.table {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.table thead th {
+    background: var(--header-gradient) !important;
+    color: white !important;
+    border: none !important;
+    font-weight: 600 !important;
+}
+
+.table tbody tr {
+    background: rgba(255, 255, 255, 0.7) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+    color: var(--text-color) !important;
+}
+
+.table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.9) !important;
+    transition: background-color 0.2s ease !important;
+}
+
+.table tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Form elements */
+.form-control {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    color: var(--text-color) !important;
+    transition: border-color 0.2s ease !important;
+}
+
+.form-control:focus {
+    background: white !important;
+    border-color: #667eea !important;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25) !important;
+}
+
+/* Footer dengan background solid */
+.sticky-footer {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Scroll to top button */
+.scroll-to-top {
+    background: var(--header-gradient) !important;
+    border: none !important;
+    transition: transform 0.2s ease !important;
+}
+
+.scroll-to-top:hover {
+    transform: translateY(-2px) !important;
+}
+
+/* Badge */
+.badge-primary {
+    background: var(--header-gradient) !important;
+    color: white !important;
+}
+
+.badge-success {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%) !important;
+    color: white !important;
+}
+
+.badge-info {
+    background: linear-gradient(135deg, #00ddff 0%, #0066ff 100%) !important;
+    color: white !important;
+}
+
+.badge-warning {
+    background: linear-gradient(135deg, #ffc107 0%, #fd7e14 100%) !important;
+    color: white !important;
+}
+
+.badge-danger {
+    background: linear-gradient(135deg, #dc3545 0%, #e74c3c 100%) !important;
+    color: white !important;
+}
+
+/* Dark mode - simplified */
+.dark-mode {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%) !important;
+}
+
+.dark-mode #wrapper {
+    background: rgba(0, 0, 0, 0.1) !important;
+}
+
+.dark-mode .sidebar {
+    background: linear-gradient(180deg, #2c3e50 0%, #34495e 100%) !important;
+}
+
+.dark-mode .topbar {
+    background: rgba(0, 0, 0, 0.8) !important;
+}
+
+.dark-mode .card {
+    background: rgba(0, 0, 0, 0.3) !important;
+    color: white !important;
+}
+
+.dark-mode .card-header {
+    background: linear-gradient(90deg, #2c3e50 0%, #34495e 100%) !important;
+}
+
+.dark-mode .table {
+    background: rgba(0, 0, 0, 0.3) !important;
+    color: white !important;
+}
+
+.dark-mode .table thead th {
+    background: linear-gradient(90deg, #2c3e50 0%, #34495e 100%) !important;
+}
+
+.dark-mode .table tbody tr {
+    background: rgba(0, 0, 0, 0.2) !important;
+}
+
+.dark-mode .form-control {
+    background: rgba(0, 0, 0, 0.3) !important;
+    color: white !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Responsive - ringan */
+@media (max-width: 768px) {
+    #wrapper {
+        margin: 5px !important;
+    }
+
+    .card:hover {
+        transform: none !important;
+    }
+
+    .btn:hover {
+        transform: none !important;
+    }
+}
+
+/* Disable animations di mobile untuk performa */
+@media (max-width: 768px) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
