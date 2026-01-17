@@ -34,7 +34,7 @@ Project ini dikembangkan sebagai **project implementatif Laravel**, dengan fokus
 ## 🛠️ Tech Stack
 
 - **Backend**: [Laravel 11](https://laravel.com/)
-- **Frontend**: Blade Template
+- **Frontend**: Blade Template Engine
 - **UI**: Bootstrap 5.3
 - **Database**: MySQL
 - **Build Tool**: Vite
