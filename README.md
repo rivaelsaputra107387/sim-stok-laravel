@@ -128,7 +128,7 @@ Project ini masih dapat dikembangkan lebih lanjut, terutama pada:
 
 **Rivael Saputra**  
 Mahasiswa Teknik Informatika & Web Developer  
-GitHub: [@rivaelsaputra107387](https://github.com/rivaelsaputra107387)
+GitHub: [@rivaelsaputra107387](https://github.com/rivaelsaputra107387),
 
 ---
 
